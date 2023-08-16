@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <form action="./index.html" method="get">
+        <div class="author">
+          <label for="author">author</label>
+          <input type="text" id="author" name="author">
+        </div>
+        <div class="title">
+          <label for="title">title</label>
+          <input type="text" id="title" name="title">
+        </div>
+        <div class="numberOfPages">
+          <label for="numberOfPages">number of pages</label>
+          <input type="text" id="numberOfPages" name="numberOfPages">
+        </div>
+        <div class="readStatus">
+          <label for="readStatus">read status</label>
+          <select name="readStatus" id="readStatus">
+            <optgroup label="select an option">
+              <option value="">---</option>
+              <option value="not finished">not finished</option>
+              <option value="finished">finished</option>
+            </optgroup>
+          </select>
+        </div>
+        <input type="submit" name="submit" id="submit">
+      </form>
+    </div>
+  </body>
+</html>
