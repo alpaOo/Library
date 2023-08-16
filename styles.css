@@ -8,11 +8,13 @@
 
 body {
   height: 100svh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-auto-flow: column;
 }
 
-.container {
-  display: flex;
-  justify-content: flex-start;
+.form-container {
+  height: 100%;
 }
 
 form {
@@ -25,6 +27,22 @@ form {
 }
 
 form > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.library-container {
+  padding: 3rem;
+}
+
+.library {
+  display: grid;
+  justify-items: flex-start;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.library .book {
   display: flex;
   flex-direction: column;
 }
